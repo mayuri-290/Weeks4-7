@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class hourhandRotation : MonoBehaviour
@@ -9,6 +10,8 @@ public class hourhandRotation : MonoBehaviour
     public AudioClip clip;
 
     public GameObject bird;
+
+    public int chimeCount;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,13 @@ public class hourhandRotation : MonoBehaviour
         {
             bird.SetActive(false);
         }
-      
+
+        if (chimeCount == 0) chimeCount = 12;
+
+        for(int i=0; i< chimeCount;i++)
+        {
+           //chime.isPlaying==true;
+        }
+
     }
 }
