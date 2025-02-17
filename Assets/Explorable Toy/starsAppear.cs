@@ -8,8 +8,6 @@ public class starsAppear : MonoBehaviour
 
     public GameObject StarsPrefab;
 
-    public Button buttonClick;
-
     public int starNumber = 8;
     public float StarAppearingTime = 1f;
 
