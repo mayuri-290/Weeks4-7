@@ -14,9 +14,9 @@ public class spawnGarbages : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(1))
+        if(Input.GetMouseButtonDown(1))
         {
-            Vector2 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+            Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             GameObject newGarbages = Instantiate(SpaceGarbagePrefab, mouse, Quaternion.identity);
 
             newGarbages.transform.localScale = Vector3.one * Random.Range(0.5f, 1.5f);
