@@ -548,7 +548,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5651717839014444007, guid: 8f61f144c32fd4f45ab404ffb787fa3c, type: 3}
   m_PrefabInstance: {fileID: 440213642700730954}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &735440866
+--- !u!114 &735440869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85be5efa8364a90419d11e68a9a3b500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.5
 --- !u!1 &857192723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.28235295, g: 0.28235295, b: 0.28235295, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1296,6 +1296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437398645}
   - component: {fileID: 1437398644}
+  - component: {fileID: 1437398646}
   m_Layer: 0
   m_Name: alien
   m_TagString: Untagged
@@ -1370,6 +1371,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437398646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437398643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2dcabcd3768f246932233ecc933301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1484624058
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2304,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4199607389145426566, guid: 8f61f144c32fd4f45ab404ffb787fa3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5651717839014444007, guid: 8f61f144c32fd4f45ab404ffb787fa3c, type: 3}
       propertyPath: m_Name
       value: spaceGarbage
@@ -2341,7 +2358,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5651717839014444007, guid: 8f61f144c32fd4f45ab404ffb787fa3c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 735440866}
+      addedObject: {fileID: 735440869}
   m_SourcePrefab: {fileID: 100100000, guid: 8f61f144c32fd4f45ab404ffb787fa3c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
