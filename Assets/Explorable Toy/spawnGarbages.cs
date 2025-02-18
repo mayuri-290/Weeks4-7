@@ -19,7 +19,15 @@ public class spawnGarbages : MonoBehaviour
             Vector2 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
             GameObject newGarbages = Instantiate(SpaceGarbagePrefab, mouse, Quaternion.identity);
 
-            Destroy(newGarbages, 5);
+            newGarbages.transform.localScale = Vector3.one * Random.Range(0.5f, 1.5f);
+            GarbageMove movementScript = newGarbages.GetComponent<GarbageMove>();
+
+            if(movementScript !=null)
+            {
+                movementScript.speed = Random.Range(1, 5);
+            }
+
+            Destroy(newGarbages, 10);
 
         }
     }

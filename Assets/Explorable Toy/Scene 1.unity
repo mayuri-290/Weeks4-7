@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785db5d7c67c7374fad1e97bd03f1839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpaceGarbagePrefab: {fileID: 5651717839014444007, guid: 8f61f144c32fd4f45ab404ffb787fa3c, type: 3}
+  SpaceGarbagePrefab: {fileID: 735440865}
 --- !u!4 &857192725
 Transform:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1437398645}
   - component: {fileID: 1437398644}
-  - component: {fileID: 1437398646}
   m_Layer: 0
   m_Name: alien
   m_TagString: Untagged
@@ -1371,19 +1370,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1437398646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437398643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b2dcabcd3768f246932233ecc933301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mousePos: {x: 0, y: 0, z: 0}
 --- !u!1 &1484624058
 GameObject:
   m_ObjectHideFlags: 0
