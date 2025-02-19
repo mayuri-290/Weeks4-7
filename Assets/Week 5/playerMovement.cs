@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerMove : MonoBehaviour
+public class playerMovement : MonoBehaviour
 {
     public float speed = 5;
     public GameObject carrot;
