@@ -27,7 +27,7 @@ public class spawnGarbages : MonoBehaviour
             GameObject newGarbages = Instantiate(SpaceGarbagePrefab, mouse, Quaternion.identity);
             //Create a new garbage object at the mouse position with no rotation.
 
-
+             
             newGarbages.transform.localScale = Vector3.one * Random.Range(0.5f, 1.5f);
             //Assign a random size to the garbage object, between 0.5 and 1.5 is a good range after tesing, the garbage should also not be too big. 
             

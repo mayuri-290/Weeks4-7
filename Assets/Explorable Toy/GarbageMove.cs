@@ -29,7 +29,9 @@ public class GarbageMove : MonoBehaviour
             //make the object back to the left edge.
             Vector3 fixedPos = new Vector3(0, 0, 0);
             pos.x = Camera.main.WorldToScreenPoint(fixedPos).x;
-            speed = speed * -1;//make the object move in the opposite direction using negative. 
+
+            speed = speed * -1;
+            //make the object move in the opposite direction using negative. 
 
 
         }

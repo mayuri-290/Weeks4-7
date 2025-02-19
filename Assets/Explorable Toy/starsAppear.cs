@@ -56,7 +56,6 @@ public class starsAppear : MonoBehaviour
 
                 GameObject star = Instantiate(StarsPrefab, randomPosition, Quaternion.identity);
                 //Instantiate the star prefab at a random position without rotation.
-
                 Destroy(star, StarAppearingTime);
                 //make sure the stars don't stay forever in the scene. 
                 //They will disappear after  1 sec, as set value above, to keep the screen clean. 

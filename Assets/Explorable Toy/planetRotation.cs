@@ -15,7 +15,7 @@ public class planetRotation : MonoBehaviour
     void Update()
     {
 
-        PlanetRotScale = planetRot.value * 1f;
+        PlanetRotScale = planetRot.value;
         //get the slider value from UI and store it to control rotation.
 
         transform.rotation = Quaternion.Euler(0, 0, PlanetRotScale);
