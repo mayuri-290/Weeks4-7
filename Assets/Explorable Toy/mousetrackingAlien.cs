@@ -14,11 +14,13 @@ public class mousetrackingAlien : MonoBehaviour
     {
         //I add a if statement and use getmousebuttonddown, since the mouse should be clicked only once.
         //Set the number to 1, because the "right" mouse button will be clicked. 
+
         if (Input.GetMouseButtonDown(1))
         {
             mouseFollow = true;
 
         }
+
         //Add one more if statement, when mouse floow is activated, update the alien position.
             if(mouseFollow)
             {

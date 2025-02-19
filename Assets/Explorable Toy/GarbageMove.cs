@@ -10,18 +10,18 @@ public class GarbageMove : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 10);//This make sure the object gets removed after 10 seconds so it doesn’t stay forever
+        Destroy(gameObject, 10);//This make sure the object gets removed after 10 seconds so it doesn't stay forever
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = transform.position;//get the object’s current position.
+        Vector3 pos = transform.position;//get the object's current position.
         pos.x += speed * Time.deltaTime;//move the object a little bit to the right (or left if speed is negative).
 
         Vector2 screenPos = Camera.main.WorldToScreenPoint(pos);
-        //This convert the object’s position from the game world to the screen coordinates.
+        //This convert the object's position from the game world to the screen coordinates.
 
         //set a if statement shows that the object moves off the left edge of the screen
         if (screenPos.x <0)
